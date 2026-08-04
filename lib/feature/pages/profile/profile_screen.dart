@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+import '../../../core/constant/app_color.dart';
+
+class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Center(
+        child: Text(
+          "Profile Screen",
+          style: TextStyle(fontSize: 24, color: AppColors.primaryBlue),
+        ),
+      ),
+    );
+  }
+}
