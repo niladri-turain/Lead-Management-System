@@ -5,7 +5,7 @@ import '../core/constant/app_size.dart';
 class CustomTextField extends StatelessWidget {
   final String label;
   final String hintText;
-  final bool isPassword;
+  final bool obscureText;
   final TextEditingController? controller;
   final Widget? suffixIcon;
   final TextInputType? keyboardType;
@@ -15,7 +15,7 @@ class CustomTextField extends StatelessWidget {
     super.key,
     required this.label,
     required this.hintText,
-    this.isPassword = false,
+    this.obscureText = false,
     this.controller,
     this.suffixIcon,
     this.keyboardType,
@@ -40,7 +40,7 @@ class CustomTextField extends StatelessWidget {
         ],
         TextField(
           controller: controller,
-          obscureText: isPassword,
+          obscureText: obscureText,
           keyboardType: keyboardType,
           maxLines: maxLines,
           cursorColor: Colors.black54,

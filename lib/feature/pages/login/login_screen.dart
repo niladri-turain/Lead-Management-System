@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
               CustomTextField(
                 label: "Password",
                 hintText: "••••••••",
-                isPassword: _obscurePassword,
+                obscureText: _obscurePassword,
                 controller: _passwordController,
                 suffixIcon: IconButton(
                   onPressed: () {
